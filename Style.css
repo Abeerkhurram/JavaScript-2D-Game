@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: azure;
+}
+.hide {
+  display: none;
+}
+body {
+  background: url(./outrun-game-wallpaper-2560x1600_7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#car {
+  background: url(./car.jpg);
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  border-radius: 20px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+}
+.startscreen {
+  background-color: tomato;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 30px;
+  opacity: 0.7;
+  color: white bold;
+  position: fixed;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  top: 45vh;
+  left: 90vh;
+  z-index: 1;
+  box-shadow: 0 5px 5px #777;
+}
+.exit {
+  background-color: transparent !important;
+  outline: 0;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px white solid;
+  float: right;
+  position: absolute;
+  bottom: 70px;
+  color: white;
+  right: 40px;
+  text-align: center;
+  opacity: 0.6;
+}
+.exit:hover {
+  opacity: 1;
+  background-color: crimson !important;
+  transition: width 0.5s;
+  transition: 0.5s ease-in-out;
+}
+
+.startscreen:hover {
+  cursor: grab;
+  opacity: 1;
+  background-color: rgb(252, 63, 30);
+
+  transition: 1s ease-in-out;
+  transform: scale(1.5, 1.5);
+}
+.score {
+  color: whitesmoke;
+  background-color: transparent;
+  width: 300px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  height: 20vh;
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 20px;
+  pointer-events: stroke;
+  opacity: 0.8;
+
+  margin-left: 60px;
+}
+.gamearea {
+  width: 500px;
+  height: 100vh;
+  background: #2d3436;
+  opacity: 1;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 5px #777;
+  border-left: 5px dashed #c8d6e5;
+  border-right: 5px dashed #c8d6e5;
+}
+.enemy {
+  background: url(./enemycar.png);
+  width: 42px;
+
+  background-size: cover;
+  border-radius: 40px;
+  border-color: 4px solid tomato;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  height: 100px;
+  position: absolute;
+}
+.lines {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  margin-left: 243px;
+}
+footer {
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  left: 180vh;
+  box-shadow: 0 5px 5px #777;
+}
+.endscreen {
+  background-color: tomato;
+  position: fixed;
+
+  color: white;
+
+  padding: 10px;
+
+  /* border: 5px solid red; */
+  width: 25vw;
+  opacity: 0.9;
+  margin-left: 2px;
+  border-radius: 10px;
+  height: 150px;
+  top: 45vh;
+  margin-left: 65px;
+  z-index: 2;
+  box-shadow: 0 5px 5px #777;
+}
+.endnote {
+  position: relative;
+  text-align: center;
+  top: 20px;
+  opacity: 0.999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  /* box-shadow: 0 5px 5px #777; */
+}
